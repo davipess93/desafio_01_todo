@@ -41,11 +41,13 @@ function App() {
   function toggleCheckTask(taskId: string) {
     const updatedTasks = tasks.map(task => {
       if (task.id === taskId) {
-        return {
+        const updatedTask = {
           id: task.id,
           content: task.content,
           checked: !task.checked
         }
+
+        return updatedTask
       } else {
         return task
       }
@@ -81,7 +83,7 @@ function App() {
             />
             
             {
-              (tasks.length <= 0 ) ? 
+              (!tasks.length) ? 
                 <EmpityTask /> 
                 : 
                 tasks.map(task => ( 

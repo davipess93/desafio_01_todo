@@ -1,0 +1,23 @@
+.empityTask {
+  width: 100%;
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.empityTask img {
+  display: block;
+  margin: 4rem auto 1rem;
+}
+
+.empityTask div {
+  margin-bottom: 4rem;
+}
+
+.empityTask div p {
+  color: var(--gray-300);
+  text-align: center;
+}
+
+.empityTask div p:first-child{
+  font-weight: 700;
+}

@@ -1,0 +1,61 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.task div:first-child {
+  display: flex;
+  gap: 8px;
+}
+
+.task .checkTask {
+  border: 2px solid var(--dark-blue);
+  border-radius: 50%;
+  height: 1rem;
+  width: 1rem;
+  /* margin-top: 0.2rem; */
+}
+
+.task .checkTask[data-state="checked"] {
+  border: none;
+  margin-right: 0.25rem;
+}
+
+.task .checkedTask {
+  background: var(--dark-purple);
+  border-radius: 50%;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.task div:last-child {
+  margin-top: calc(0px - 0.2rem);
+}
+
+.task .btnDelete {
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task .btnDelete:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+  border-radius: 4px;
+}
+
+.checked {
+  text-decoration: line-through;
+}

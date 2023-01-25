@@ -1,0 +1,21 @@
+.header {
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0;
+  gap: 12px;
+}
+
+.header span:first-child {
+  color: var(--blue);
+}
+
+.header span:last-child {
+  color: var(--dark-purple);
+}
+
+.header span {
+  font-size: 2.5rem;
+  font-weight: 900;
+}

@@ -1,0 +1,29 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.info div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.info div:first-child span:first-child {
+  color: var(--blue);
+}
+
+.info div:last-child span:first-child {
+  color: var(--purple);
+}
+
+.info div span:last-child {
+  display: block;
+  padding: 2px 8px;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 0.7rem;
+}
